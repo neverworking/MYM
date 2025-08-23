@@ -5,12 +5,13 @@ import BootScreen from './BootScreen.jsx'
 const EXTERNAL = {
   movies: 'https://backup-plan-gamma.vercel.app/',
   playlist: 'https://play-chi.vercel.app/',
-  messages: 'https://goodmorningh.netlify.app/'
+  messages: 'https://goodmorningh.netlify.app/',
+  PhotoBooth: 'https://photobooth-seven-tau.vercel.app/'
 }
 
 export default function GameBoyShell({ initialPage }){
   const navigate = useNavigate()
-  const menuItems = ['Movies Together','Playlist','Morning Messages','Heaven Journey']
+  const menuItems = ['Movies Together','Playlist','PhotoBooth','Morning Messages','Heaven Journey']
   const [selected, setSelected] = useState(0)
   const [showPanel, setShowPanel] = useState(false)
   const [panelTitle, setPanelTitle] = useState('Welcome')
