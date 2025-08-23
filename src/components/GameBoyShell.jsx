@@ -4,12 +4,13 @@ import BootScreen from './BootScreen.jsx'
 
 const EXTERNAL = {
   movies: 'https://backup-plan-gamma.vercel.app/',
-  playlist: 'https://play-chi.vercel.app/'
+  playlist: 'https://play-chi.vercel.app/',
+  PhotoBooth: 'https://photobooth-seven-tau.vercel.app/'
 }
 
 export default function GameBoyShell({ initialPage }){
   const navigate = useNavigate()
-  const menuItems = ['Movies Together','Playlist','Morning Messages','Heaven Journey']
+  const menuItems = ['Movies Together','Playlist','PhotoBooth','Morning Messages','Heavan']
   const [selected, setSelected] = useState(0)
   const [showPanel, setShowPanel] = useState(false)
   const [panelTitle, setPanelTitle] = useState('Welcome')
@@ -76,7 +77,7 @@ export default function GameBoyShell({ initialPage }){
                 </button>
               </div>
               <div className="header">
-                <div className="title">HEAVEN HUB</div>
+                <div className="title">HEAVEN With Me</div>
                 <div className="subtitle">CHOOSE WHERE YOU WANT<br/>TO GO WITH ME...</div>
               </div>
               <div className="menu" role="listbox" aria-label="Main menu">
