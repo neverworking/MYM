@@ -11,7 +11,7 @@ const EXTERNAL = {
 
 export default function GameBoyShell({ initialPage }){
   const navigate = useNavigate()
-  const menuItems = ['Movies Together','Playlist','PhotoBooth','Morning Messages','Heaven Journey']
+  const menuItems = ['Movies Together','Playlist','Morning Messages','PhotoBooth','Heaven Journey']
   const [selected, setSelected] = useState(0)
   const [showPanel, setShowPanel] = useState(false)
   const [panelTitle, setPanelTitle] = useState('Welcome')
@@ -55,6 +55,7 @@ export default function GameBoyShell({ initialPage }){
     if (idx === 0){ window.open(EXTERNAL.movies, '_blank', 'noopener') }
     else if (idx === 1){ window.open(EXTERNAL.playlist, '_blank', 'noopener') }
     else if (idx === 2){ window.open(EXTERNAL.messages, '_blank', 'noopener') }
+    else if (idx === 2){ window.open(EXTERNAL.photobooth, '_blank', 'noopener') }
     else if (idx === 3){ navigate('/journey'); setPanelTitle('Heaven Journey'); setPanelContent('A short journey — placeholder content.'); setShowPanel(true) }
   }
 
