@@ -5,12 +5,12 @@ import BootScreen from './BootScreen.jsx'
 const EXTERNAL = {
   movies: 'https://backup-plan-gamma.vercel.app/',
   playlist: 'https://play-chi.vercel.app/',
-  PhotoBooth: 'https://photobooth-seven-tau.vercel.app/'
+  messages: 'https://goodmorningh.netlify.app/'
 }
 
 export default function GameBoyShell({ initialPage }){
   const navigate = useNavigate()
-  const menuItems = ['Movies Together','Playlist','PhotoBooth','Morning Messages','Heavan']
+  const menuItems = ['Movies Together','Playlist','Morning Messages','Heaven Journey']
   const [selected, setSelected] = useState(0)
   const [showPanel, setShowPanel] = useState(false)
   const [panelTitle, setPanelTitle] = useState('Welcome')
@@ -53,7 +53,7 @@ export default function GameBoyShell({ initialPage }){
     play('select')
     if (idx === 0){ window.open(EXTERNAL.movies, '_blank', 'noopener') }
     else if (idx === 1){ window.open(EXTERNAL.playlist, '_blank', 'noopener') }
-    else if (idx === 2){ navigate('/messages'); setPanelTitle('Morning Messages'); setPanelContent('Retro-styled Messages page — coming soon!'); setShowPanel(true) }
+    else if (idx === 2){ window.open(EXTERNAL.messages, '_blank', 'noopener') }
     else if (idx === 3){ navigate('/journey'); setPanelTitle('Heaven Journey'); setPanelContent('A short journey — placeholder content.'); setShowPanel(true) }
   }
 
@@ -77,7 +77,7 @@ export default function GameBoyShell({ initialPage }){
                 </button>
               </div>
               <div className="header">
-                <div className="title">HEAVEN With Me</div>
+                <div className="title">HEAVEN HUB</div>
                 <div className="subtitle">CHOOSE WHERE YOU WANT<br/>TO GO WITH ME...</div>
               </div>
               <div className="menu" role="listbox" aria-label="Main menu">
