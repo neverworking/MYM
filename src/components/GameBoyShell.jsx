@@ -4,8 +4,8 @@ import BootScreen from './BootScreen.jsx'
 
 const EXTERNAL = {
   movies: 'https://backup-plan-gamma.vercel.app/',
-  playlist: 'https://play-chi.vercel.app/',
-  messages: 'https://goodmorningh.netlify.app/',
+  playlist: 'https://playlist-l3v2.vercel.app/',
+  messages: 'https://good-morning-h.vercel.app/',
   photobooth: 'https://photobooth-seven-tau.vercel.app/' // ✅ lowercase key to match usage
 }
 
