@@ -16,7 +16,7 @@ export default function GameBoyShell({ initialPage }) {
     'Playlist',
     'Morning Messages',
     'PhotoBooth',
-    'Heaven Journey'
+    'Coming Soon...'
   ]
   const [selected, setSelected] = useState(0)
   const [showPanel, setShowPanel] = useState(false)
@@ -30,7 +30,7 @@ export default function GameBoyShell({ initialPage }) {
     if (initialPage === 'messages') {
       setTimeout(() => openInternal('messages'), 300)
     }
-    if (initialPage === 'journey') {
+    if (initialPage === 'Coming Soon...') {
       setTimeout(() => openInternal('journey'), 300)
     }
   }, [initialPage])
@@ -91,8 +91,8 @@ export default function GameBoyShell({ initialPage }) {
       window.open(EXTERNAL.photobooth, '_blank', 'noopener') // ✅ Photobooth works now
     } else if (idx === 4) {
       navigate('/journey')
-      setPanelTitle('Heaven Journey')
-      setPanelContent('A short journey — placeholder content.')
+      setPanelTitle('Coming Soon...')
+      setPanelContent('Coming Soon...')
       setShowPanel(true)
     }
   }
@@ -104,8 +104,8 @@ export default function GameBoyShell({ initialPage }) {
       setShowPanel(true)
     }
     if (which === 'journey') {
-      setPanelTitle('Heaven Journey')
-      setPanelContent('A short journey — placeholder content.')
+      setPanelTitle('Coming Soon...')
+      setPanelContent('Coming Soon...')
       setShowPanel(true)
     }
   }
@@ -139,7 +139,7 @@ export default function GameBoyShell({ initialPage }) {
                 </button>
               </div>
               <div className="header">
-                <div className="title">HEAVEN HUB</div>
+                <div className="title">MYMM</div>
                 <div className="subtitle">
                   CHOOSE WHERE YOU WANT
                   <br />
